@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: key2
+stringData:
+  type: gran
+  scheme: ed25519
+  seed: "//Alice//mytestseed2"

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: my-configmap
+data:
+  offchain.json: |
+    {
+        "keys": "ddhub_gateway_url,ddhub_fqcn,ddhub_topic_name,ddhub_topic_owner,ddhub_client_id,portfolio_registry_url",
+        "ddhub_gateway_url": "http://dle-ddhub-client-gateway-0.consortia-relaychain.svc.cluster.local:3333",
+        "ddhub_fqcn": "envelope.get",
+        "ddhub_topic_name": "envelope.file",
+        "ddhub_topic_owner": "oep.apps.dle.iam.ewc",
+        "ddhub_client_id": "ocw-envelope-poller",
+        "portfolio_registry_url": "https://ddhub-mock-dev.energyweb.org"
+    }
