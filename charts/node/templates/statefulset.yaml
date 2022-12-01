@@ -812,14 +812,12 @@ spec:
             secretName: {{ $fullname }}-{{ .type }}
             defaultMode: 0400
       {{- end }}
-
       {{- range $keys := .Values.node.existingSecrets.keys }}
         - name: {{ $keys }}
           secret:
             secretName: {{ $keys }}
             defaultMode: 0400
       {{- end }}
-
       {{- if .Values.node.chainKeystore.mountInMemory.enabled }}
         - name: chain-keystore
           emptyDir:
