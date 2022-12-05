@@ -238,8 +238,8 @@ entries:
     name: node
     type: application
     urls:
-    - https://github.com/paritytech/helm-charts/releases/download/node-4.2.5/node-4.2.5.tgz
-    version: 4.2.5
+    - https://github.com/energywebfoundation/parity-helm-charts/releases/download/node-4.2.6/node-4.2.6.tgz
+    version: 4.2.6
   - apiVersion: v2
     created: "2022-11-03T13:19:45.980372434Z"
     description: A Helm chart to deploy Substrate/Polkadot nodes
